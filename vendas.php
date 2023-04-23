@@ -30,7 +30,7 @@
     // Verifica se o usuário está autenticado
     session_start();
     if (!isset($_SESSION["username"])) {
-        header("Location: index.php");
+        header("Location: index.html");
         exit();
     }
     ?>
@@ -38,7 +38,7 @@
     
     <main>
          
-        <div id="sai"><a href="index.html"> <img src="imagens/sairpng_resized.png" alt=""></a></div>
+        <div id="sair"><a href="index.html"> <img src="imagens/sairpng_resized.png" alt=""></a></div>
         
         
         <h1 id="titulo"> Gestão  Março</h1>

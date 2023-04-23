@@ -23,7 +23,7 @@ if (array_key_exists($username, $users) && $users[$username] == $password) {
 } else {
 	// Se as credenciais estiverem incorretas, redireciona o usuário para a página index.php com um parâmetro de erro
 	$error = "Usuário ou senha inválidos";
-	header("Location: tela_login.php?error=" . urlencode($error));
+	header("Location: index.html?error=" . urlencode($error));
 	exit();
 }
 ?>
