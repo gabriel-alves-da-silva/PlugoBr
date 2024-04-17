@@ -10,41 +10,21 @@
     <title>Gestão plugo</title>
 </head>
 <style>
-    #bemvindo{
-        color: #4D4DFF;
-        font-size: 20px;
-    }
-    #logo{
-        margin: auto;
-        display: block;
-        text-align: left;
-        width: 100px;
-        height: 100px;
-        justify-content: space-around;
-    }
+   
+    
 
 
 </style>
 <body>
-    <?php
-    // Verifica se o usuário está autenticado
-    session_start();
-    if (!isset($_SESSION["username"])) {
-        header("Location: index.html");
-        exit();
-    }
-    ?>
-    
+  
     
     <main>
          
-        <div id="sair"><a href="index.html"> <img src="imagens/sairpng_resized.png" alt=""></a></div>
-        
-        
+        <div class="sair"><a href="index.html"> <img src="imagens/sairpng_resized.png" alt=""></a></div>
         <h1 id="titulo"> Gestão  Março</h1>
 
         <nav>
-            <a href="vendas.php">Vendas</a>
+            <a href="vendas.html">Vendas</a>
             <a href="entradas.html">Entradas</a>
             <a href="saidas.html">Saidas</a>
             <a href="receber.html">Receber</a>
@@ -86,7 +66,8 @@
             </tr>
             
         </table>
-        <h1 id="bemvindo">Logado como, <?php echo $_SESSION["username"]; ?></h1>
+        
+
 
         
          
@@ -149,18 +130,8 @@
         </table>
     </section>
     
-    
-    <?php 
-        echo "Saldo Atual: R$251,02 \nPojeção: R$370,82 \nMeta: R$450,00"
 
-    ?>
-    <script>
-        //   window.document = alert ('Mes de Março fechado. planilhas Disponivel para dowload')
-
-           //window.document = alert('Saldo Atual: R$251,02 \nPojeção: R$370,82 \nMeta: R$450,00')
-            
-        
-    </script>
+   
 
     
 </body>
